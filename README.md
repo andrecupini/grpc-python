@@ -21,7 +21,7 @@ python -m pip install grpcio_tools
 
 Run this command to get the artifact auto generated from the protobuf file
 ```
-python -m grpc_tools.protoc -I . --python_out=. HelloService.proto
+ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. HelloService.proto
 ```
 
 <sup><sub>André Cupini - 2021-06-16</sub></sup>

@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\017br.com.zup.grpcB\017HelloWorldProtoP\001\242\002\003HLW',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x12HelloService.proto\x12\x0f\x62r.com.zup.grpc\"A\n\x0cHelloRequest\x12\x11\n\tfirstName\x18\x01 \x01(\t\x12\x10\n\x08lastName\x18\x02 \x01(\t\x12\x0c\n\x04\x66rom\x18\x03 \x01(\t\" \n\rHelloResponse\x12\x0f\n\x07message\x18\x01 \x01(\t2X\n\x0cHelloService\x12H\n\x05hello\x12\x1d.br.com.zup.grpc.HelloRequest\x1a\x1e.br.com.zup.grpc.HelloResponse\"\x00\x42*\n\x0f\x62r.com.zup.grpcB\x0fHelloWorldProtoP\x01\xa2\x02\x03HLWb\x06proto3'
+  serialized_pb=b'\n\x12HelloService.proto\x12\x0f\x62r.com.zup.grpc\"E\n\x0cHelloRequest\x12\x11\n\tfirstName\x18\x01 \x01(\t\x12\x10\n\x08lastName\x18\x02 \x01(\t\x12\x10\n\x08location\x18\x03 \x01(\t\" \n\rHelloResponse\x12\x0f\n\x07message\x18\x01 \x01(\t2X\n\x0cHelloService\x12H\n\x05hello\x12\x1d.br.com.zup.grpc.HelloRequest\x1a\x1e.br.com.zup.grpc.HelloResponse\"\x00\x42*\n\x0f\x62r.com.zup.grpcB\x0fHelloWorldProtoP\x01\xa2\x02\x03HLWb\x06proto3'
 )
 
 
@@ -48,7 +48,7 @@ _HELLOREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='from', full_name='br.com.zup.grpc.HelloRequest.from', index=2,
+      name='location', full_name='br.com.zup.grpc.HelloRequest.location', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -67,7 +67,7 @@ _HELLOREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=39,
-  serialized_end=104,
+  serialized_end=108,
 )
 
 
@@ -98,8 +98,8 @@ _HELLORESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=106,
-  serialized_end=138,
+  serialized_start=110,
+  serialized_end=142,
 )
 
 DESCRIPTOR.message_types_by_name['HelloRequest'] = _HELLOREQUEST
@@ -130,8 +130,8 @@ _HELLOSERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=140,
-  serialized_end=228,
+  serialized_start=144,
+  serialized_end=232,
   methods=[
   _descriptor.MethodDescriptor(
     name='hello',
